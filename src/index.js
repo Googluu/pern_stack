@@ -6,6 +6,7 @@ const taskRoutes = require('./routes/tasks.routes');
 const app = express();
 
 app.use(morgan('dev')); // para ver por consola las peticiones que van llegando
+app.use(express.json());
 
 app.use(taskRoutes);
 
